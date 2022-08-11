@@ -1,0 +1,225 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+top {
+  position: relative;
+  padding: 5vh 15vw 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #767e83;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.divider {
+  flex-grow: 1;
+}
+
+a.brand img {
+  width: 2.5rem;
+}
+
+nav a:not(.brand) {
+  color: #767e83;
+  text-decoration: none;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid transparent;
+  margin-right: 3rem;
+}
+
+nav a:not(.brand):hover {
+  color: #333333;
+  border-bottom-color: #767e83;
+}
+
+nav input {
+  padding-bottom: 0.75rem;
+  border: none;
+  border-bottom: 2px solid #767e83;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-bottom-color: #333333;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.25;
+}
+
+blockquote {
+  border-left: 2px solid #333333;
+  margin-left: 0;
+  padding-left: 2rem;
+  max-width: 30rem;
+  font-size: 1.1rem;
+  color: #767e83;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+}
+
+button {
+  text-transform: uppercase;
+  background-color: #ea625c;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.watch {
+  position: absolute;
+  right: -25rem;
+  bottom: 0;
+}
+
+section {
+  padding: 4vh 15vw;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-column-gap: 4rem;
+}
+
+.article p {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.article .more {
+  color: tomato;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.more:before {
+  content: "";
+  width: 3rem;
+  height: 3px;
+  background: tomato;
+  margin-right: 0.5rem;
+  transition: width ease-in-out 0.3s;
+}
+
+.more:hover:before {
+  width: 4.5rem;
+}
+
+.dot-container {
+  display: flex;
+}
+
+.dot-1,
+.dot-2 {
+  margin-right: 0.5rem;
+}
+
+.first-dots {
+  width: 0.3rem;
+  height: 0.3rem;
+  background-color: #cac9cb;
+}
+
+.second-container {
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 4rem;
+}
+
+.second-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.second-container button {
+  cursor: pointer;
+}
+
+.last-container {
+  width: 105rem;
+  height: 50rem;
+  background-image: url(/img//runners.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.last-content {
+  padding-top: 9rem;
+  padding-left: 57rem;
+  padding-right: 10rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.last-content h1 {
+  color: white;
+}
+
+.last-content p {
+  border-left: 3px solid white;
+  margin-left: 0;
+  padding-left: 2rem;
+  max-width: 30rem;
+  font-size: 1.1rem;
+  color: white;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+}
+
+.borton {
+  background-color: #ea625c;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  width: 13rem;
+  font-size: 13px;
+  font-weight: bolder;
+}
